@@ -7,6 +7,6 @@ interface IButtonProps {
 
 export const Button = ({text, onClick}: IButtonProps) => {
   return (
-      <button onClick={onClick}>{text}</button>
+      <button style={{padding: '10px', backgroundColor: 'rgba(0,0,0,0.1)'}} onClick={onClick}>{text}</button>
   )
 }
