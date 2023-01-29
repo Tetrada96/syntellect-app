@@ -12,7 +12,7 @@ interface IInputProps {
 }
 
 const renderButtonFromArray = (array: IButtons[], side: 'left' | 'right') => {
-  return <div style={{display: 'flex', flexDirection: 'row', gap: '10px'}}>{array.filter((button) => button.side === side).map((item) => <Button onClick={item.onClick} text={item.text} />)}</div> ;
+  return <div style={{display: 'flex', flexDirection: 'row', gap: '10px'}}>{array.filter((button) => button.side === side).map((item) => <Button key={item.text} onClick={item.onClick} text={item.text} />)}</div> ;
 }
 
 

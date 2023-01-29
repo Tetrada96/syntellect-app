@@ -8,6 +8,6 @@ export interface IInputProps {
 export const Input = ({value, onChange}: IInputProps) => {
   
   return(
-      <input value={value} onChange={onChange} />  
+      <input style={{padding: '10px'}} value={value} onChange={onChange} />  
   )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import { AutoComplete } from "./fragments/AutoComplete";
+import { AutocompleteWithThreeHint } from "./fragments/AutocompleteWithThreeHint";
+import { AutocompleteWithTenHint } from "./fragments/AutocompleteWithTenHint";
 import { InputWithAlertButtons } from "./fragments/InputWithAlertButtons";
 import { InputWithClear } from "./fragments/InputWithClear";
 
@@ -9,7 +10,8 @@ const App =() => (
     <div>
       <InputWithClear />
       <InputWithAlertButtons />
-      <AutoComplete />
+      <AutocompleteWithThreeHint  />
+      <AutocompleteWithTenHint  />
     </div>
 )
 
